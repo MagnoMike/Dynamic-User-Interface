@@ -40,3 +40,80 @@ body {
     border-radius: 10px;
     background-color: #DDDBDA;
 }
+
+#formContainer>#studentForm :nth-last-child(1) {
+    justify-content: center;
+    display: flex;
+}
+
+#formContainer>#studentForm>.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+#formContainer>#studentForm>.input-field>label {
+    margin: 10px;
+    font-size: larger;
+    font-weight: bold;
+    color: darkviolet;
+}
+
+#formContainer>#studentForm>.input-field>input {
+    margin: 10px;
+    font-size: medium;
+    font-weight: normal;
+    color: black;
+}
+
+#formContainer>#studentForm :nth-last-child(1)>button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    color: darkviolet;
+    background-color: rgba(248, 247, 248, 0.342);
+    border-radius: 5px;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#listContainer>.list-item {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #DDDBDA;
+    border-radius: 5px;
+}
+
+#listContainer>.list-item>h2 {
+    font-size: medium;
+    font-weight: bold;
+    color: darkviolet;
+}
+
+#listContainer>.list-item>p {
+    font-size: small;
+    font-weight: normal;
+    color: black;
+}
+
+#listContainer>.list-item>button {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+    color: darkviolet;
+    border-radius: 5px;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#listContainer {
+    /* display: flex; */
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@media (width < 320px) {
+    listContainer>.list-item {
+        grid-column: span 12;
+    }
+}
