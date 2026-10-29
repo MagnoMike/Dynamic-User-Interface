@@ -10,32 +10,27 @@
 </head>
 
 <body>
-
     <main class="container">
 
-        <!-- Header -->
         <header id="headerContainer">
             <h1>Student Directory</h1>
             <p>Manage your students in one place</p>
         </header>
 
-        <!-- Add Student Form -->
         <section id="formContainer">
             <h2>Add New Student</h2>
 
             <form id="studentForm">
                 <div class="form-grid">
-
                     <div class="input-field">
                         <label for="name">Student Name</label>
-                        <input type="text" name="name" id="name" placeholder="Enter student name" required>
+                        <input type="text" id="name" name="name" placeholder="Enter student name" required>
                     </div>
 
                     <div class="input-field">
                         <label for="program">Program</label>
-                        <input type="text" name="program" id="program" placeholder="Enter Program" required>
+                        <input type="text" id="program" name="program" placeholder="Enter program" required>
                     </div>
-
                 </div>
 
                 <button type="submit" class="add-button">
@@ -44,27 +39,22 @@
             </form>
         </section>
 
-        <!-- Student List -->
         <section id="listSection">
-
             <div class="list-header">
                 <h2>Student List</h2>
                 <span id="studentCount">0 Students</span>
             </div>
 
-            <div id="listContainer" class="student-grid">
-
-                <!-- Student cards will appear here -->
-
-            </div>
+            <div id="listContainer" class="student-grid"></div>
 
             <p id="emptyMessage">
                 No students yet. Add your first student!
             </p>
-
         </section>
-    </main>
 
+        <footer>Student Directory &copy; 2026</footer>
+
+    </main>
 </body>
 
 </html>
