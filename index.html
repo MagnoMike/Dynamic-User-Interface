@@ -1,66 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dynamic User Interface</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Directory</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <section id="headerContainer">
-        <h1>Student Directory</h1>
-        <small>Show list of students</small>
-    </section>
 
-    <section id="formContainer">
-        <form id="studentForm">
-            <div class="input-field">
-                <label for="name"> Student Name</label>
-                <input type="text" name="name" id="name">
+    <main class="container">
+
+        <!-- Header -->
+        <header id="headerContainer">
+            <h1>Student Directory</h1>
+            <p>Manage your students in one place</p>
+        </header>
+
+        <!-- Add Student Form -->
+        <section id="formContainer">
+            <h2>Add New Student</h2>
+
+            <form id="studentForm">
+                <div class="form-grid">
+
+                    <div class="input-field">
+                        <label for="name">Student Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter student name" required>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="program">Program</label>
+                        <input type="text" name="program" id="program" placeholder="Enter Program" required>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="add-button">
+                    + Add Student
+                </button>
+            </form>
+        </section>
+
+        <!-- Student List -->
+        <section id="listSection">
+
+            <div class="list-header">
+                <h2>Student List</h2>
+                <span id="studentCount">0 Students</span>
             </div>
-            <div class="input-field">
-                <label for="program"> Program</label>
-                <input type="text" name="program" id="program">
+
+            <div id="listContainer" class="student-grid">
+
+                <!-- Student cards will appear here -->
+
             </div>
-            <div>
-                <button> Add Student </button>
-            </div>
-        </form>
-    </section>
 
-    <section id="listContainer">
-        <article class="list-item">
-            <h2>Name</h2>
-            <p>Text</p>
-            <button> Delete </button>
-        </article>
+            <p id="emptyMessage">
+                No students yet. Add your first student!
+            </p>
 
-        <article class="list-item">
-            <h2>Name</h2>
-            <p>Text</p>
-            <button> Delete </button>
-        </article>
-
-        <article class="list-item">
-            <h2>Name</h2>
-            <p>Text</p>
-            <button> Delete </button>
-        </article>
-
-        <article class="list-item">
-            <h2>Name</h2>
-            <p>Text</p>
-            <button> Delete </button>
-        </article>
-
-        <article class="list-item">
-            <h2>Name</h2>
-            <p>Text</p>
-            <button> Delete </button>
-        </article>
-    </section>
+        </section>
+    </main>
 
 </body>
 
